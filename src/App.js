@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [joke, setJoke] = useState("")
@@ -29,7 +31,7 @@ function App() {
       setBookmark([...bookmark, joke])
 
     } else {
-      alert("already marked")
+      toast("Already marked")
     }
 
   }
@@ -37,6 +39,7 @@ function App() {
   function RemoveBookmark(index) {
     let remBook = bookmark.filter((bookmark, i) => i !== index)
     setBookmark(remBook)
+    toast("Removed joke from bookmark")
   }
 
   console.log(bookmark, "book")
@@ -49,6 +52,7 @@ function App() {
         <h2>Joke Application</h2>
         <button onClick={AddJoke} id="add-joke">New Joke</button>
         <button onClick={() => { AddBookmark(joke) }} id="add-book">Add Bookmark</button>
+        <ToastContainer id="toast"/>
 
       </header>
       <div id='inner-container'>
@@ -69,9 +73,13 @@ function App() {
         </div>
       </div >
       <footer>
+        <p>Author: Vaishali Vaidya</p> 
+        <p style={{ marginTop:"-23px"}}>
         <a href='https://github.com/vaidyavaishali/jokeApp' target='_blank'>
-         source code
+            view Source code
         </a>
+        </p>
+       
       </footer>
     </div >
 
