@@ -32,7 +32,7 @@ h1{
 
 #bookmark div{
   width: 10%;
-  background-color: rgb(139, 115, 227);
+  background-color: rgb(179, 167, 225);
   margin: 1%;
   padding: .3%;
 }
@@ -68,15 +68,15 @@ button[id="add-book"]{
   color:white
 }
 button[id="rem-book"]{
-  background-color: rgb(70, 152, 229);
+  background-color: rgb(36, 26, 178);
   color: rgb(247, 240, 240);
-  margin-top:-13%;
+  /* margin-top:-13%; */
   width: 80%;
   height: 4vh;
 }
 footer{
   width: 80%;
-  background-color: rgb(30, 30, 112);
+  background-color: rgb(26, 26, 181);
   margin: auto;
   text-align: center;
   height: 10%;
