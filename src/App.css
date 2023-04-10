@@ -1,0 +1,75 @@
+.main-container{
+  background-color: rgb(216, 193, 237);
+  width: 100vw;
+  height: 100vh;
+  padding: .3%;
+  box-sizing: border-box;
+}
+#inner-container{
+  width: 80%;
+  height: 50%;
+  padding: 1%;
+  background-color: rgb(245, 238, 238);
+  margin:auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#joke-container{
+  width: 100%;
+  /* height: 40%; */
+  /* background-color: white; */
+  padding: .2%;
+}
+#bookmark{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#bookmark div{
+  width: 10%;
+  background-color: bisque;
+  margin: 1%;
+}
+header{
+  width: 80%;
+  height: 20%;
+  background-color: rgb(23, 23, 95);
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+header button{
+  width: 18%;
+  height: 7vh;
+  margin: 2%;
+}
+button[id="add-joke"]{
+  background-color: red;
+  color: white;
+}
+button[id="add-book"]{
+  background-color: rgb(162, 255, 0);
+  color: rgb(18, 17, 17);
+}
+button[id="rem-book"]{
+  background-color: rgb(70, 152, 229);
+  color: rgb(247, 240, 240);
+  margin-top:-13%;
+  width: 80%;
+  height: 4vh;
+}
+footer{
+  width: 80%;
+  background-color: rgb(30, 30, 112);
+  margin: auto;
+  text-align: center;
+  height: 10%;
+  padding-top: 1%;
+}
+footer a{
+  color: white;
+
+}
