@@ -63,7 +63,7 @@ function App() {
             )
           })}
         </div>
-        {joke == "" ? <h6>Click on add joke button to add the jokes</h6>: <div id='joke-container' >
+        {joke == "" ? <h6>Click on new joke button to add the jokes</h6>: <div id='joke-container' >
           <p>{joke.setup}</p>
           <p>{joke.punchline}</p>
 
